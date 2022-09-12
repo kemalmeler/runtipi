@@ -97,7 +97,7 @@ INTERNAL_IP="$(ip addr show "${NETWORK_INTERFACE}" | grep "inet " | awk '{print 
 DNS_IP=9.9.9.9 # Default to Quad9 DNS
 ARCHITECTURE="$(uname -m)"
 TZ="$(timedatectl | grep "Time zone" | awk '{print $3}' | sed 's/\//\\\//g' || Europe\/Berlin)"
-APPS_REPOSITORY="https://github.com/meienberger/runtipi-appstore"
+APPS_REPOSITORY="https://github.com/kemalmeler/runtipi-appstore"
 REPO_ID="$(${ROOT_FOLDER}/scripts/git.sh get_hash ${APPS_REPOSITORY})"
 APPS_REPOSITORY_ESCAPED="$(echo ${APPS_REPOSITORY} | sed 's/\//\\\//g')"
 
