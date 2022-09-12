@@ -9,7 +9,7 @@ else
 fi
 
 ROOT_FOLDER="$($rdlk -f $(dirname "${BASH_SOURCE[0]}")/..)"
-REPO_ID="$(echo -n "https://github.com/meienberger/runtipi-appstore" | sha256sum | awk '{print $1}')"
+REPO_ID="$(echo -n "https://github.com/kemalmeler/runtipi-appstore" | sha256sum | awk '{print $1}')"
 STATE_FOLDER="${ROOT_FOLDER}/state"
 
 show_help() {
